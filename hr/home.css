@@ -1,0 +1,45 @@
+body {
+    color: white;
+    background: linear-gradient(135deg, #007bff, #7700ff, #000000, #ffcc00); /* Gradient background with blue, white, black, and yellow */
+    background-size: 400% 400%;
+    animation: gradient 15s infinite;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bubbles {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0.5;
+    border-radius: 50%;
+    animation: bubbles 8s infinite;
+}
+
+@keyframes bubbles {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.objectives ul {
+    list-style: none; /* Remove default bullets */
+}

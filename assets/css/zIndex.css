@@ -1,0 +1,73 @@
+section {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+body{
+    background-image: url('img/logo.png'); 
+    background-size:cover;
+}
+.bg-custom {
+    background-color: rgba(6, 10, 127, 255);
+}
+/* Add shadow to sections */
+section {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Adjust shadow properties as needed */
+    background-color: rgb(255, 255, 255);
+    opacity: .85;
+}
+:root {
+    --bs-primary: rgba(6, 10, 127, 255); /* Update the primary color variable */
+}
+/* Override the primary color for buttons */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+/* Override the primary color for links */
+a.btn-primary,
+a.btn-primary:hover {
+    color: #fff;
+}
+.navbar-logo {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* To maintain aspect ratio */
+    margin-right: 10px;
+}
+.set-text {
+    color: #78bdf6;
+}
+.set-color{
+    color:white;
+}
+.text-bg-dark{
+    background-color: rgba(0, 0, 0, .5);
+    opacity: .8;
+    color:white;
+}
+.nav-separator {
+    border-bottom: 1px solid white;
+    margin: 8px 0; /* Adjust the margin as needed */
+    height: 1px; /* Specify the height of the separator */
+    width: 100%; /* Make it span the full width */
+}
+
+/* Add hovering effect */
+.nav-link:hover {
+    color: rgba(6, 10, 127, 1); /* Change the hover color here */
+}
+
+.btn-custom {
+    background-color: rgba(6, 10, 127, 1); /* Your custom background color */
+    border-color: rgba(6, 10, 127, 1); /* Your custom border color */
+    color: #fff; /* Text color */
+}
+
+.btn-custom:hover {
+    background-color: rgba(6, 10, 127, 0.8); /* Hover background color */
+    border-color: rgba(6, 10, 127, 0.8); /* Hover border color */
+    color: #fff; /* Hover text color */
+}
+
+footer {
+    padding: 20px 0; /* Add some vertical padding for spacing */
+    text-align: center; /* Center-align the content */
+}

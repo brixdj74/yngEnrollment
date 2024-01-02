@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(135deg, #f0f0f0, #0095a8, #f0f0f0);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.bubbles {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+    animation: bubbles 8s infinite;
+}
+
+.bubbles:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation-duration: 12s;
+}
+
+.bubbles:nth-child(2) {
+    top: 30%;
+    left: 50%;
+    animation-duration: 9s;
+}
+
+.bubbles:nth-child(3) {
+    top: 60%;
+    left: 80%;
+    animation-duration: 10s;
+}
+
+@keyframes bubbles {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(50px, -1000px);
+        opacity: 0;
+    }
+}
+.btn{
+    background-color: white;
+    color:black;
+}
+
+.hidden{
+    display:none;
+}
+

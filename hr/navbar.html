@@ -1,0 +1,64 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div>
+            <a class="navbar-brand" href="home.php">
+                <img src="../img/logo.png" alt="SET" width="30" class="d-inline-block align-text-top">
+                YNG UNIVERSITY - TALAVERA
+            </a>
+            <button class="btn btn-sm btn-outline-secondary me-2" type="button" onclick="toEnroll()">Enrollment</button>
+            <button class="btn btn-sm btn-outline-secondary me-2" type="button" onclick="toData()">Data Entry</button>
+            <button class="btn btn-sm btn-outline-secondary me-2" type="button" onclick="toCou()">Courses</button>
+            <button class="btn btn-sm btn-outline-secondary me-2" type="button" onclick="toSub()">Subjects</button>
+        </div>
+        <div class="d-flex align-items-center">
+            <div id="currentTime" class="me-2 p-2 rounded bg-transparent text-light border"></div>
+            
+            <button class="btn btn-sm btn-outline-secondary me-2" type="button" onclick="toAcc()">Account</button>
+            <button class="btn btn-sm btn-outline-secondary" type="button" onclick="logOut()">Log Out</button>
+        </div>
+    </div>
+</nav>
+
+<script>
+    function toEnroll() {
+        window.location.href = 'enrollment.php';
+    }
+    function toSub() {
+        window.location.href = 'sub.php';
+    }
+    function toCou(){
+        window.location.href= 'cou.php';
+    }
+    function toHr(){
+        window.location.href= 'admin.php';
+    }
+    function toData(){
+        window.location.href= 'data.php';
+    }
+    function toReports(){
+        window.location.href= 'teachers.php';
+    }
+    function toAcc(){
+        window.location.href= 'acc.php';
+    }
+    function logOut() {
+        window.location.href = '../ap.php';
+    }
+    
+    
+</script>
+
+<script>
+    // Function to update the current time
+    function updateCurrentTime() {
+        const currentTimeElement = document.getElementById("currentTime");
+        const currentTime = new Date();
+        const options = {hour: "2-digit", minute: "2-digit", second: "2-digit" };
+        const timeString = currentTime.toLocaleDateString(undefined , options);
+        currentTimeElement.textContent = timeString;
+    }
+
+    // Update the current time immediately and then every second
+    updateCurrentTime();
+    setInterval(updateCurrentTime, 1000); // Update every second
+</script>
