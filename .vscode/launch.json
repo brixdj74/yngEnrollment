@@ -8,14 +8,14 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
-            "url": "http://localhost/setenrollment/index.php",
+            "url": "http://localhost/yngenrollment/index.php",
             "webRoot": "${workspaceFolder}"
         },
         {
             "type": "msedge",
             "request": "launch",
             "name": "Open ap.php",
-            "file": "c:\\xampp\\htdocs\\setenrollment\\index.php"
+            "file": "c:\\xampp\\htdocs\\yngenrollment\\index.php"
         }
     ]
 }
